@@ -87,6 +87,7 @@ const FireShaderMaterial = shaderMaterial(
 extend({ FireShaderMaterial });
 
 export default function FireBackground() {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const materialRef = useRef<any>(null);
 
   useFrame((state) => {
