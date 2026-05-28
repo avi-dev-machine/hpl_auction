@@ -11,8 +11,8 @@ export default function Home() {
   const [isShuffling, setIsShuffling] = useState(false);
   const [avatars, setAvatars] = useState<string[]>([]);
   const [showSoldForm, setShowSoldForm] = useState(false);
-  const [price, setPrice] = useState("1000");
-  const [team, setTeam] = useState("Titans");
+  const [price, setPrice] = useState("");
+  const [team, setTeam] = useState("Dynamic Titans FC");
 
   useEffect(() => {
     // Pre-fetch avatars for the carousel faces
@@ -117,10 +117,13 @@ export default function Home() {
               onChange={e => setTeam(e.target.value)}
               className="bg-black border-2 border-[#ffcc00] text-[#ffcc00] font-[family-name:var(--font-teko)] text-2xl px-3 py-1 w-40 outline-none text-center"
             >
-              <option value="Titans">Titans</option>
-              <option value="Spartans">Spartans</option>
-              <option value="Warriors">Warriors</option>
-              <option value="Knights">Knights</option>
+              <option value="Dynamic Titans FC">Dynamic Titans FC</option>
+              <option value="Rangers United FC">Rangers United FC</option>
+              <option value="TOOFAN FC">TOOFAN FC</option>
+              <option value="Outliners FC">Outliners FC</option>
+              <option value="Goaldiggers FC">Goaldiggers FC</option>
+              <option value="Venom Strikers FC">Venom Strikers FC</option>
+              <option value="Atlas Eagles FC">Atlas Eagles FC</option>
             </select>
           </div>
           <div className="flex gap-4 justify-center">
