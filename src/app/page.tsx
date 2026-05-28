@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import FireBackground from "../components/FireBackground";
 import AuctionCard from "../components/AuctionCard";
-import Carousel from "../components/Carousel";
+import PackReveal from "../components/PackReveal";
 import { Canvas } from "@react-three/fiber";
 
 export default function Home() {
@@ -62,7 +62,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-[#050505] flex flex-col items-center overflow-hidden relative">
+    <main className="min-h-screen bg-[#050505] flex flex-col justify-center items-center overflow-hidden relative">
       {/* 3D WebGL Fire Background */}
       <div className="fixed inset-0 w-screen h-screen z-0 pointer-events-none opacity-80 mix-blend-screen">
         <Canvas>
@@ -87,7 +87,7 @@ export default function Home() {
       )}
 
       {isShuffling && currentPlayer && (
-        <Carousel 
+        <PackReveal 
           targetPlayer={currentPlayer} 
           avatars={avatars} 
           onComplete={() => setIsShuffling(false)} 
