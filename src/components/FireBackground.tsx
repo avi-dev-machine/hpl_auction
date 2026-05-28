@@ -87,7 +87,7 @@ const FireShaderMaterial = shaderMaterial(
 extend({ FireShaderMaterial });
 
 export default function FireBackground() {
-  const materialRef = useRef<any>();
+  const materialRef = useRef<any>(null);
 
   useFrame((state) => {
     if (materialRef.current) {
