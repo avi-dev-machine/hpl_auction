@@ -124,6 +124,7 @@ export default function Home() {
               <option value="Goaldiggers FC">Goaldiggers FC</option>
               <option value="Venom Strikers FC">Venom Strikers FC</option>
               <option value="Atlas Eagles FC">Atlas Eagles FC</option>
+              <option value="SPARTAN ATHLETICS">SPARTAN ATHLETICS</option>
             </select>
           </div>
           <div className="flex gap-4 justify-center">
